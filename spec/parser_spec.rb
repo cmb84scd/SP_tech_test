@@ -17,4 +17,11 @@ describe Parser do
       expect(parser.page_visit_count).to eq([['/help_page/1', 6], ['/contact', 3], ['/home', 3], ['/about/2', 3], ['/index', 3], ['/about', 2]])
     end
   end
+
+  describe '#print_page_visit_info' do
+    it 'prints the page visit information' do
+      parser.get_log_data(test_log)
+      expect(parser.print_page_visit_info).to eq ['/help_page/1 6 visits', '/contact 3 visits', '/home 3 visits', '/about/2 3 visits', '/index 3 visits', '/about 2 visits']
+    end
+  end
 end
