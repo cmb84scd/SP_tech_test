@@ -22,7 +22,13 @@ describe Parser do
 
   describe '#print_page_visit_info' do
     it 'prints the page visit information' do
-      expect(parser.print_page_visit_info).to eq ['/help_page/1 6 visits', '/contact 3 visits', '/home 3 visits', '/about/2 3 visits', '/index 3 visits', '/about 2 visits']
+      expect(parser.print_page_visit_info).to eq(['/help_page/1 6 visits', '/contact 3 visits', '/home 3 visits', '/about/2 3 visits', '/index 3 visits', '/about 2 visits'])
+    end
+  end
+
+  describe '#unique_page_visit_count' do
+    it 'sorts and counts the unique data' do
+      expect(parser.unique_page_visit_count).to eq([['/help_page/1', 5], ['/home', 3], ['/index', 3], ['/contact', 2], ['/about/2', 2], ['/about', 2]])
     end
   end
 end
