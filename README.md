@@ -6,14 +6,15 @@ This is my Smart Pension tech test. You are able to see a count of webpages visi
 - rspec # to see that all tests are passing
 - rubocop # to see that it is linted
 ```
-The run the following command in the command line:<br>
+The run the following command in the command line:
+
 `ruby ./lib/parser.rb ./webserver.log `
 
 Please note that the commands at the bottom of `parser.rb` need to be commented out for the tests to run but uncommented when using the script in the command line.
 
 ### My Approach
 
-I spent some time planning (see user stories and diagrams below), initially just the input/output table. I then played around with some code in order to give me a better understanding of what I needed to do. Once I had this understanding I was about to do the domain model diagram. The biggest problem I had was working out how to test the use of the webserver.log file. After a lot of struggles I opted to create a test.log file and I have a command at the top of the spec file to enable the tests to access it.
+I spent some time planning (see user stories and diagrams below), initially just the input/output table. I then played around with some code in order to give me a better understanding of what I needed to do. Once I had this understanding I was able to do the domain model diagram. The biggest problem I had was working out how to test the use of the webserver.log file. After a lot of struggles I opted to create a test.log file and I have a command at the top of the spec file to enable the tests to access it.
 
 I have one class with several methods as I felt this was the best way to do this. My code is structured so that is clear, simple and easy to understand / change. Overall I am happy with this and I feel like I have fulfilled the requirements. Despite some frustrations, I enjoyed doing this and I learnt a lot too.
 
