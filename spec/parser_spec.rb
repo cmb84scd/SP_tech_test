@@ -10,7 +10,7 @@ describe Parser do
 
   describe '#get_log_data' do
     it 'stores data as array of hashes' do
-      expect(parser.site_visits).to include({ page: '/about/2', url: '444.701.448.104' })
+      expect(parser.page_visits).to include({ page: '/about/2', url: '444.701.448.104' })
     end
   end
 
